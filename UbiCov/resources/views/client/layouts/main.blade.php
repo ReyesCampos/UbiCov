@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>One Page Wonder - Start Bootstrap Template</title>
-        <link rel="icon" type="image/x-icon" href="{{asset('/dash/assets/favicon.ico')}}" />
+        <title>UbiCov</title>
+        <link rel="icon" type="image/x-icon" href="{{asset('/img/icono.png')}}" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -14,6 +14,7 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{{asset('/dash/css/styles.css')}}" rel="stylesheet" />
+        
     </head>
     <body>
         <!-- Navigation-->

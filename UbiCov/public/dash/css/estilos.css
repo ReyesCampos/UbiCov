@@ -1,0 +1,38 @@
+#seccion1{
+    margin: 2.5%;
+}
+#seccion1-title{
+    margin-top: 2.5%;
+    margin-left: 2.5%;
+    color:  #3A0141;
+}
+#seccion2{
+    margin-left: 5%;
+    font-size: 1.5rem;
+}
+.seccion2-subtitle{
+    margin-left: 2.5%;
+    display: block;
+    background-color: #FC0C94;
+    width: 2rem;
+}
+#seccion3{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1.2rem;
+
+}
+.cuadro{
+    text-align: center;
+    height: 150px;
+    width: 150px;
+    margin-top:1%;
+}
+#img{
+    width: 36px;
+    height: 36px;
+    margin-left: 33.33%;
+}
+#letra{
+    color:  #068A75;
+}
