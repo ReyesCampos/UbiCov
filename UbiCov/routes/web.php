@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('client.index1');
-});
-Route::get('/conocenos', function () {
-    return view('client.conocenos');
+Route::group(['prefix'=>'/','as'=>'/'],function(){
+    Route::get('', function () {return view('client.index');});
+    Route::get('/conocenos', function () {return view('client.conocenos');});
 });
