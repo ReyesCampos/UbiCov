@@ -61,7 +61,7 @@
                 </div>
             </div>
             <div class="card col-lg col-md col-sm-12" style="width: 10rem;">
-                <img src="{{asset('/img/itsncg.png')}}" class="card-img-top" alt="..." >
+                <img src="{{asset('/img/itsncg.png')}}" class="card-img-top" alt="..." style="height: 200px">
                  <div class="card-body">
                      <p class="card-text" style="text-align: justify">
                      Instituto Tecnologico Superior de Nuevo Casas Grandes, Chihuahua, Mex. 
