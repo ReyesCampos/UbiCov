@@ -5,7 +5,7 @@
 <header class="masthead text-center text-white">
             <div class="masthead-content">
                 <div class="container">
-                    <h1><img src="{{asset('/img/logoof.png')}}" alt="..." /> </h1>
+                    <h1><img src="{{asset('/img/logoof.png')}}" class="d-block w-100" alt="..." /> </h1>
                     <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#!">Descarga la APP</a>
                 </div>
             </div>
@@ -18,8 +18,8 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="p-5">
-                            <h2 class="display-4">Inicio de Sesión</h2>
-                            <p> En caso de ser miembro de UbiCov puedes acceder solo al dar clic en "Iniciar Sesión"</p>
+                            <h2 class="display-4" id="subtitulo">Inicio de Sesión</h2>
+                            <p id="caracteristicas"> En caso de ser miembro de UbiCov puedes acceder solo al dar clic en "Iniciar Sesión".</p>
                         </div>
                     </div>
                 </div>
@@ -33,8 +33,8 @@
                     </div>
                     <div class="col-lg-6 order-lg-1">
                         <div class="p-5">
-                            <h2 class="display-4">¿Aún no eres miembro de UviCov?</h2>
-                            <p>Si aún no eres miembro de UbiCov ¡Corre a Registrarte! como empresa o persona</p>
+                            <h2 class="display-4" id="subtitulo">¿Aún no eres miembro de UbiCov?</h2>
+                            <p id="caracteristicas">Si aún no eres miembro de UbiCov ¡Corre a Registrarte! Hazlo como empresa o persona.</p>
                         </div>
                     </div>
                 </div>
@@ -48,8 +48,8 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="p-5">
-                            <h2 class="display-4">¡Alertas!</h2>
-                            <p>En UbiCov puedes alertar a las personas de no acceder a algún sitio para protegerlos solo al dar un clic</p>
+                            <h2 class="display-4" id="subtitulo">¡Alertas!</h2>
+                            <p id="caracteristicas">En UbiCov puedes alertar a las personas de no acceder a algún sitio para protegerlos solo al dar un clic.</p>
                         </div>
                     </div>
                 </div>
@@ -63,8 +63,8 @@
                     </div>
                     <div class="col-lg-6 order-lg-1">
                         <div class="p-5">
-                            <h2 class="display-4">Lugares</h2>
-                            <p>Puedes ingresar a UbiCov a ver que lugares son propensos a que te contagies</p>
+                            <h2 class="display-4" id="subtitulo">Lugares</h2>
+                            <p id="caracteristicas">Puedes ingresar a UbiCov a ver que lugares son propensos a que te contagies.</p>
                         </div>
                     </div>
                 </div>
@@ -78,8 +78,8 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="p-5">
-                            <h2 class="display-4">Simbología</h2>
-                            <p>En UbiCov podras encontrar una simbología simple para que sea facíl de recordar</p>
+                            <h2 class="display-4" id="subtitulo">Simbología</h2>
+                            <p id="caracteristicas">En UbiCov podrás encontrar una simbología simple para que sea fácil de recordar.</p>
                         </div>
                     </div>
                 </div>
@@ -93,8 +93,8 @@
                     </div>
                     <div class="col-lg-6 order-lg-1">
                         <div class="p-5">
-                            <h2 class="display-4">APP</h2>
-                            <p>Usa la App de UbiCov y tendras la información mas precisa, ¡Cuidate y cuidanos!</p>
+                            <h2 class="display-4" id="subtitulo">APP</h2>
+                            <p id="caracteristicas">Usa la App de UbiCov y tendrás la información mas precisa, ¡Cuídate y cuídanos!</p>
                         </div>
                     </div>
                 </div>
