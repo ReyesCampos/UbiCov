@@ -15,5 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::group(['prefix'=>'/','as'=>'/'],function(){
     Route::get('', function () {return view('client.index');});
+    Route::get('/index', function () {return view('client.index');});
     Route::get('/conocenos', function () {return view('client.conocenos');});
 });
