@@ -66,7 +66,7 @@
       </form>
 
       <p class="mb-0">
-        <a href="register.html" class="text-center">Registrar una nueva cuenta</a>
+        <a href="/register" class="text-center">Registrar una nueva cuenta</a>
       </p>
     </div>
     <!-- /.login-card-body -->
