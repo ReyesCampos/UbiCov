@@ -21,3 +21,6 @@ Route::group(['prefix'=>'/','as'=>'/'],function(){
     Route::get('/index', function () {return view('client.index');});
     Route::get('/conocenos', function () {return view('client.conocenos');});
 });
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
