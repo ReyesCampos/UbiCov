@@ -1,7 +1,7 @@
 @extends('admin.layouts.main')
 
 @section('contenido')
-<h2>NEGOCIOS REGISTRADOS</h2>
+<h2>SEMAFORIZACIÓN</h2>
 @endsection
 
 @section('scripts')

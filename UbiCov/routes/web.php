@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::group(['prefix'=>'/','as'=>'/'],function(){
     Route::get('/admin', function () {return view('admin.index');});
     Route::get('/admin/usuarios', function () {return view('admin.users');});
+    Route::get('/admin/mapa', function () {return view('admin.mapa');});
+    Route::get('/admin/graficos', function () {return view('admin.graficos');});
+    Route::get('/admin/semaforizacion', function () {return view('admin.semaforizacion');});
 
     Route::get('', function () {return view('client.index');});
     Route::get('/index', function () {return view('client.index');});

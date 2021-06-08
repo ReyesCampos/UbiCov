@@ -47,19 +47,25 @@
               <li class="nav-item">
                 <a href="./index.html" class="nav-link active">
                   <i class="far fa-user nav-icon"></i>
-                  <p>Dashboard v1</p>
+                  <p>Usuarios registrados</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="./index2.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v2</p>
+                  <i class="far fa-map nav-icon"></i>
+                  <p>Mapa</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="./index3.html" class="nav-link">
+                  <i class="far fa-heart nav-icon"></i>
+                  <p>Gráficos</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="./index3.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v3</p>
+                  <p>Semaforización</p>
                 </a>
               </li>
             </ul>
