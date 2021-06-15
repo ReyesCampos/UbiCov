@@ -11,12 +11,10 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="dashboard/dist/img/avatar.png" class="img-circle elevation-2" alt="User Image">
+          <img src="dashboard/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">
-          {{ Auth::user()->name }}
-          </a>
+          <a href="#" class="d-block">Alexander Pierce</a>
         </div>
       </div>
 
@@ -53,38 +51,26 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="admin/mapa" class="nav-link">
+                <a href="mapa" class="nav-link">
                   <i class="far fa-map nav-icon"></i>
                   <p>Mapa</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="admin/graficos" class="nav-link">
+                <a href="graficos" class="nav-link">
                   <i class="far fa-heart nav-icon"></i>
                   <p>Gráficos</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="admin/semaforizacion" class="nav-link">
+                <a href="semaforizacion" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Semaforización</p>
                 </a>
               </li>
             </ul>
           </li>
-          <li class="nav-item">
-          <a class="nav-link" href="{{ route('logout') }}"
-            onclick="event.preventDefault();
-            document.getElementById('logout-form').submit();">
-              <i class="nav-icon fas fa-sign-out-alt"></i>
-              <p>
-                Log Out
-              </p>
-            </a>
-            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-              @csrf
-            </form>
-          </li>
+          <
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
