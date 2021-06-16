@@ -45,6 +45,12 @@
               <p>Reportes</p>
             </a>
           </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="/admin/config">
+              <i class="material-icons">settings</i>
+              <p>Configuración</p>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
