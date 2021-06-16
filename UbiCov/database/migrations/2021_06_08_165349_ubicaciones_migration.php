@@ -15,8 +15,8 @@ class UbicacionesMigration extends Migration
     {
         Schema::create('ubicaciones', function (Blueprint $table) {
             $table->id();
-            $table->string('x');
-            $table->string('y');
+            $table->string('direccion');
+            $table->string('coordenadas');
             $table->rememberToken();
             $table->timestamps();
         });
