@@ -33,6 +33,18 @@
               <p>Semaforización</p>
             </a>
           </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="/admin/avisos">
+              <i class="material-icons">bookmark</i>
+              <p>Avisos</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="/admin/reportes">
+              <i class="material-icons">summarize</i>
+              <p>Reportes</p>
+            </a>
+          </li>
         </ul>
       </div>
     </div>

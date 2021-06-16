@@ -25,6 +25,8 @@ Route::group(['prefix'=>'admin','as'=>'admin.'],function(){
     Route::get('/mapa', function () {return view('admin.mapa');});
     Route::get('/graficos', function () {return view('admin.graficos');});
     Route::get('/semaforizacion', function () {return view('admin.semaforizacion');});
+    Route::get('/avisos', function () {return view('admin.avisos');});
+    Route::get('/reportes', function () {return view('admin.reportes');});
 });
 Auth::routes();
 
