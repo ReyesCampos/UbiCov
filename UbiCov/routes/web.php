@@ -28,6 +28,8 @@ Route::group(['prefix'=>'admin','as'=>'admin.'],function(){
     Route::get('/avisos', function () {return view('admin.avisos');});
     Route::get('/reportes', function () {return view('admin.reportes');});
     Route::get('/config', function () {return view('admin.configuracion');});
+    Route::get('/usuarios', [App\Http\Controllers\Admin\usersController::class,'index']);
+    Route::resource('usuarios', App\Http\Controllers\Admin\usersController::class);
 });
 Auth::routes();
 
