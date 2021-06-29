@@ -138,7 +138,13 @@
          </div>
          <div class="from-group">
          <label for="numInterior">Id usuario</label>
-         <input type="text" class="form-control form-control-border" id="id_user" name="id_user" value="{{ @old('id_user') }}">
+         <select class="input-large form-control form-control-border" id="combo" name="combo" onchange="ShowSelected();">
+              <option selected="selected" disabled="true">Elige un usuario:</option>
+              @foreach($user as $u)
+              <option value="{{$u->id}}" name="id_user_{{$u->id}}">{{$u->name}}</option>
+              @endforeach
+        </select>
+         <input type="hidden" class="form-control form-control-border" id="id_user" name="id_user" value="{{ @old('id_user') }}">
          </div>
            <div class="modal-footer  justify-content-between">
              <button type="button" class="btn btn-default"data-dismiss="modal">Cerrar</button>
@@ -193,6 +199,13 @@
              $("#formEliminar_"+idEliminar).submit();
         });
     });
+
+    function ShowSelected()
+      {
+      /* Para obtener el valor */
+      var cod = document.getElementById("combo").value;
+      $("#id_user").val(cod);
+      }
     
     </script>
 @endsection

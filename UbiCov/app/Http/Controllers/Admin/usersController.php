@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Validator; 
 use App\Models\Empresa;
+use App\Models\user;
 use File;
 
 class usersController extends Controller
@@ -20,7 +21,10 @@ class usersController extends Controller
         $datos=\DB::table('empresas')->select('empresas.*')
         ->orderBy('id','DESC')
         ->get();
-        return view('admin.users')->with('empresas',$datos);
+        $user=\DB::table('users')->select('users.*')
+        ->orderBy('id','DESC')
+        ->get();
+        return view('admin.users')->with('empresas',$datos)->with('user',$user);
     }
 
     /**
