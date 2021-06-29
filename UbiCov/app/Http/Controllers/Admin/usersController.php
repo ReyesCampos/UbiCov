@@ -27,6 +27,19 @@ class usersController extends Controller
         return view('admin.users')->with('empresas',$datos)->with('user',$user);
     }
 
+    public function generar(){
+        $datos=\DB::table('empresas')
+        ->select('empresas.*', 'users.id as idUser', 'users.email', 'users.name')
+        ->orderBy('empresas.id', 'DESC')
+        ->join('users', 'empresas.id_user', '=', 'users.id')
+        ->get();
+        $fecha=date("Y-m-d");
+        $todo= compact('datos', 'fecha');
+        $pdf = PDF::loadView('reportes.reporteNegocio', $todo);
+        //return $pdf->download('reporte.pdf');
+        return $pdf->stream('reporte'.date('Y_m_d_h_m_s').'.pdf');
+    }
+
     /**
      * Show the form for creating a new resource.
      *

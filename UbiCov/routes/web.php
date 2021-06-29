@@ -34,6 +34,9 @@ Route::group(['prefix'=>'admin','as'=>'admin.'],function(){
     Route::get('/config', function () {return view('admin.configuracion');});
     Route::get('/usuarios', [App\Http\Controllers\Admin\usersController::class,'index']);
     Route::resource('usuarios', App\Http\Controllers\Admin\usersController::class);
+
+    Route::get('/PDFnegocio', [App\Http\Controllers\Admin\usersController::class,'generar']);
+    Route::get('/PDFaviso', [App\Http\Controllers\Admin\avisosController::class,'generar']);
 });
 Auth::routes();
 

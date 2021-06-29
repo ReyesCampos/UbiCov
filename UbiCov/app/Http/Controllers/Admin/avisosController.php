@@ -16,6 +16,18 @@ class avisosController extends Controller
         return view('admin.avisos')->with('avisos',$datos);
     }
 
+    public function generar(){
+        $datos=\DB::table('avisos')
+        ->select('avisos.*')
+        ->orderBy('avisos.id', 'DESC')
+        ->get();
+        $fecha=date("Y-m-d");
+        $todo= compact('datos', 'fecha');
+        $pdf = PDF::loadView('reportes.reporteAvisos', $todo);
+        //return $pdf->download('reporte.pdf');
+        return $pdf->stream('reporte'.date('Y_m_d_h_m_s').'.pdf');
+    }
+
     public function store(Request $request)
     {
        $validator= Validator:: make($request->all(),[
