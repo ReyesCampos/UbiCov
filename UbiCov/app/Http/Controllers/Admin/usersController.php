@@ -8,6 +8,7 @@ use Validator;
 use App\Models\Empresa;
 use App\Models\user;
 use File;
+use PDF;
 
 class usersController extends Controller
 {
@@ -16,6 +17,11 @@ class usersController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function __construct(){
+        $this->middleware('auth');
+    }
+
     public function index()
     {
         $datos=\DB::table('empresas')->select('empresas.*')

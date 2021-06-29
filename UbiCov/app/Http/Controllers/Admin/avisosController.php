@@ -6,9 +6,15 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Validator;
 use App\Models\Aviso;
+use PDF;
 
 class avisosController extends Controller
 {
+
+    public function __construct(){
+        $this->middleware('auth');
+    }
+
     public function index () {
         $datos=\DB::table('avisos')->select('avisos.*')
         ->orderBy('id','DESC')

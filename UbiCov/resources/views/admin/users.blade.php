@@ -11,11 +11,11 @@
             <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item">
-                <a class="btn btn-outline-primary btn_sm" target="_blank" href="/admin/PDFnegocio">
+                <a class="btn btn-outline-primary " target="_blank" href="/admin/PDFnegocio">
                   <i class="fa fa-print"></i>Reporte</a>
                 </li>
                 <li class="breadcrumb-item">
-                    <button class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#modal-add">
+                    <button class="btn btn-outline-primary" data-toggle="modal" data-target="#modal-add">
                        <i class="fa fa-plus"></i> Agregar Negocio</button>
                 </li>
                 
