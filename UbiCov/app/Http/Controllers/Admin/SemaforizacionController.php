@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Validator;
 use App\Models\Simbologia;
+use PDF;
 
 class SemaforizacionController extends Controller
 {
@@ -20,6 +21,20 @@ class SemaforizacionController extends Controller
         ->orderBy('id','DESC')
         ->get();
         return view('admin.semaforizacion')->with('simbologias',$datos);
+    }
+
+    public function generar(){
+        $datos=\DB::table('simbologias')
+        ->select('simbologias.*')
+        ->orderBy('simbologias.id', 'DESC')
+        ->get();
+        $fecha=date("Y-m-d");
+        $contador=Simbologia::count();
+        $todo= compact('datos', 'fecha', 'contador');
+        $pdf = PDF::loadView('reportes.reporteSemaforo', $todo);
+        //return $pdf->download('reporte.pdf');
+        return $pdf->stream('reporte'.date('Y_m_d_h_m_s').'.pdf');
+        
     }
 
     public function store(Request $request)

@@ -28,7 +28,8 @@ class avisosController extends Controller
         ->orderBy('avisos.id', 'DESC')
         ->get();
         $fecha=date("Y-m-d");
-        $todo= compact('datos', 'fecha');
+        $contador=Aviso::count();
+        $todo= compact('datos', 'fecha', 'contador');
         $pdf = PDF::loadView('reportes.reporteAvisos', $todo);
         //return $pdf->download('reporte.pdf');
         return $pdf->stream('reporte'.date('Y_m_d_h_m_s').'.pdf');

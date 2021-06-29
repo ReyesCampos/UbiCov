@@ -11,10 +11,16 @@
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item">
+                <a class="btn btn-outline-primary " target="_blank" href="/admin/PDFsemaforo">
+                  <i class="fa fa-print"></i>Reporte</a>
+                </li>
+                <li class="breadcrumb-item">
               <button class="btn btn-outline-primary btn_sm" data-toggle="modal" data-target="#modal-add">
                 <i class="fa fa-plus"></i>  
                 Agregar un semáforo
               </button>
+              </li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->

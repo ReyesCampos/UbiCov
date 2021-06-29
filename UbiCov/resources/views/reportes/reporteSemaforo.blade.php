@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reporte</title>
 
     <style>
@@ -225,7 +234,7 @@
     <main>
       <div id="details" class="clearfix">
         <div id="client">
-          <h2 class="name">Reporte de negocios registrados:</h2>
+          <h2 class="name">Reporte de semáforos registrados:</h2>
           <div class="address">Fecha: {{$fecha}}</div>
         </div>
       </div>
@@ -233,25 +242,19 @@
         <thead>
           <tr>
             <th class="no">#</th>
-            <th class="desc">Nickname</th>
-            <th class="unit">Email</th>
-            <th class="qty">Negocio</th>
-            <th class="qty">Giro</th>
-            <th class="qty">Ubicación</th>
+            <th class="desc">Color</th>
+            <th class="unit">Leyenda</th>
+            <th class="qty">Fecha</th>
             
           </tr>
         </thead>
         <tbody>
           @foreach($datos as $d)
             <tr>
-                <td class="no">{{$d->idUser}}</td>
-                <td class="desc">{{$d->name}}</td>
-                <td class="unit">{{$d->email}}</td>
-                <td class="qty">{{$d->nombre}}</td>
-                <td class="qty">{{$d->tipo}}</td>
-                <td class="qty">{{$d->calle}}, {{$d->numExterior}}, {{$d->colonia}}.
-                    {{$d->cp}}, {{$d->ciudad}}, {{$d->estado}}.
-                </td>
+                <td class="no">{{$d->id}}</td>
+                <td class="desc">{{$d->simbolo}}</h3></td>
+                <td class="unit">{{$d->leyenda}}</td>
+                <td class="qty">{{$d->created_at}}</td>
             </tr>
           @endforeach
         </tbody>
@@ -265,5 +268,7 @@
     <footer>
       Todos los derechos reservados (2021).
     </footer>
+</body>
+</html>
 </body>
 </html>

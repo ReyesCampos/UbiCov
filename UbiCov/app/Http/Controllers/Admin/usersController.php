@@ -40,10 +40,12 @@ class usersController extends Controller
         ->join('users', 'empresas.id_user', '=', 'users.id')
         ->get();
         $fecha=date("Y-m-d");
-        $todo= compact('datos', 'fecha');
+        $contador=Empresa::count();
+        $todo= compact('datos', 'fecha', 'contador');
         $pdf = PDF::loadView('reportes.reporteNegocio', $todo);
         //return $pdf->download('reporte.pdf');
         return $pdf->stream('reporte'.date('Y_m_d_h_m_s').'.pdf');
+        
     }
 
     /**
