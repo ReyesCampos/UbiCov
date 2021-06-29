@@ -28,6 +28,7 @@ The above copyright notice and this permission notice shall be included in all c
   <link href="{{asset('/dashboard/assets/css/material-dashboard.css?v=2.1.2')}}" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="{{asset('/dashboard/assets/demo/demo.css')}}" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-colorpicker/2.5.3/css/bootstrap-colorpicker.min.css" rel="stylesheet">
 </head>
 
 <body class="">
@@ -332,6 +333,8 @@ The above copyright notice and this permission notice shall be included in all c
 
     });
   </script>
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
   @yield('scripts')
+
 </body>
 </html>

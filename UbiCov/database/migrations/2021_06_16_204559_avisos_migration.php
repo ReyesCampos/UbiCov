@@ -16,7 +16,7 @@ class AvisosMigration extends Migration
         Schema::create('avisos', function (Blueprint $table) {
             $table->id();
             $table->string('color');
-            $table->string('simbolo');
+            $table->string('titulo');
             $table->string('aviso');
             $table->rememberToken();
             $table->timestamps();

@@ -15,13 +15,9 @@ class SimbologiasMigration extends Migration
     {
         Schema::create('simbologias', function (Blueprint $table) {
             $table->id();
-            $table->integer('cantidadRep');
+            $table->string('leyenda');
             $table->string('color');
             $table->string('simbolo');
-            $table->unsignedBigInteger('id_reporte');
-            $table->string('fecha_inicio');
-            $table->string('fecha_final');
-            $table->foreign('id_reporte')->references('id')->on('reportes');
             $table->rememberToken();
             $table->timestamps();
         });

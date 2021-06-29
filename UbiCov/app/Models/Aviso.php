@@ -10,7 +10,7 @@ class Aviso extends Model
     use HasFactory;
     protected $fillable = [
         'color',
-        'simbolo',
+        'titulo',
         'aviso'
     ];
 }

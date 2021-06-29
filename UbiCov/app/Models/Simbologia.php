@@ -9,11 +9,8 @@ class Simbologia extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'cantidadRep',
+        'leyenda',
         'color',
-        'simbolo',
-        'id_reporte',
-        'fecha_inicio',
-        'fecha_final'
+        'simbolo'
     ];
 }
