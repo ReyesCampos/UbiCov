@@ -12,7 +12,7 @@
           <li class="nav-item active  ">
             <a class="nav-link" href="/admin/usuarios">
               <i class="material-icons">people</i>
-              <p>Usuarios</p>
+              <p>Negocios</p>
             </a>
           </li>
           <li class="nav-item ">
@@ -30,7 +30,7 @@
           <li class="nav-item ">
             <a class="nav-link" href="/admin/semaforizacion">
               <i class="material-icons">traffic</i>
-              <p>Semaforización</p>
+              <p>Semáforo</p>
             </a>
           </li>
           <li class="nav-item ">
@@ -39,12 +39,7 @@
               <p>Avisos</p>
             </a>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="/admin/reportes">
-              <i class="material-icons">summarize</i>
-              <p>Reportes</p>
-            </a>
-          </li>
+          
         </ul>
       </div>
     </div>

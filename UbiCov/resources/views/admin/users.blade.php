@@ -171,9 +171,9 @@
              <button type="button" class="btn btn-danger btnCloseEliminar">Eliminar</button>
         </div>
         
+      </div>
     </div>
-</div>
-</div>
+  </div>
 </div>
 @endsection
 

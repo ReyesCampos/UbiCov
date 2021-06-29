@@ -29,6 +29,10 @@ The above copyright notice and this permission notice shall be included in all c
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="{{asset('/dashboard/assets/demo/demo.css')}}" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-colorpicker/2.5.3/css/bootstrap-colorpicker.min.css" rel="stylesheet">
+
+  <script src="../jquery.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/colorpicker.js"></script>   
+<link rel="stylesheet" href="css/colorpicker.css" type="text/css" />
 </head>
 
 <body class="">

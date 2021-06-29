@@ -6,7 +6,7 @@
 <header class="masthead text-center text-white">
             <div class="masthead-content">
                 <div class="container">
-                <img src="{{asset('/img/warning.png')}}" class="card-img-top" alt="..." style="height: 50%; width: 50%;">
+                <img src="{{asset('/img/warning.png')}}" class="card-img-top" alt="..." style="height: 50%">
                     <h1>Avisos</h1>
                 </div>
             </div>
@@ -19,11 +19,17 @@
 <div class="container">
     <div class="row">
         @foreach($avisos as $a)
-            <div class="alert alert-success col-12" role="alert">
-                <h4 class="alert-heading">{{  $a->titulo  }}</h4>
-                <p class="card-text" style="text-align: justify">{{  $a->aviso  }}</p>
-            </div>
-        @endforeach      
+            <div class="col-12">
+                <div class="card card-chart">
+                    <div class="card-header card-header" style="background-color:#068A75" >
+                    </div>
+                    <div class="card-body">
+                    <h3 class="card-title">{{  $a->titulo }}</h3>
+                    <p> {{  $a->aviso  }}</p>
+                    </div>
+                </div>
+                </div>
+            @endforeach      
 </div>
 </div>
 
